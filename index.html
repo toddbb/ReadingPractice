@@ -5,17 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Reader</title>
+    <link rel="stylesheet" href="styles/main.css">
     <script type="text/javascript" src="scripts/global.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body>
-    <img src="images/main-page-icon.png" alt="" height="200" width="200">
-    <div class="difficulty">
-        <div class="btn-difficulty" id="btn-beginner">Beginner</div>
-        <div class="btn-difficulty" id="btn-easy">Easy</div>
-        <div class="btn-difficulty" id="btn-medium">Medium</div>
-        <div class="btn-difficulty" id="btn-hard">Hard</div>
-        <div class="btn-difficulty" id="btn-advanced">Advanced</div>
+    <div class="page page-home flex-col">
+        <div class="wrapper flex-col">
+            <div class="header">                
+                <img id="main-icon" src="images/main-page-icon.png" alt="" height="200" width="200">
+            </div>
+            <div class="difficulty flex-col">
+                <div class="btn-difficulty" id="btn-beginner">
+                    <div class="btn-diff-text">Beginner</div>
+                    <div class="btn-diff stars">⭐</div>
+                </div>
+                <div class="btn-difficulty" id="btn-easy">
+                    <div class="btn-diff-text">Easy</div>
+                    <div class="btn-diff stars">⭐⭐</div>
+                </div>
+                <div class="btn-difficulty" id="btn-medium">
+                    <div class="btn-diff-text">Medium</div>
+                    <div class="btn-diff stars">⭐⭐⭐</div>
+                </div>
+                <div class="btn-difficulty" id="btn-hard">
+                    <div class="btn-diff-text">Hard</div>
+                    <div class="btn-diff stars">⭐⭐⭐⭐</div>
+                </div>
+                <div class="btn-difficulty" id="btn-advanced">
+                    <div class="btn-diff-text">Advanced</div>
+                    <div class="btn-diff stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page page-game">
+        <div class="wrapper flex-col">
+            <div class="header-game flex-row">
+                <div class="btn-home">🏠</div>
+                <div class="scoreboard">0</div>
+            </div>
+            <div class="readerText">The quick brown fox jumps over the lazy dog.</div>
+            <div class="controls-game flex-row">
+                <div class="button btn-correct flex-row">✅</div>
+                <div class="button btn-wrong flex-row">❌</div>
+            </div>
+        </div>
+    </div>
+    <div class="page page-settings">
+        <div class="wrapper flex-col">
+        </div>
     </div>
 </body>
 </html>
