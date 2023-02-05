@@ -57,6 +57,7 @@ const loadPage = (pageId) => {
     /// load reading array if it's the game page
     if (pageId === 'page-game') {
         $g.user.thisReading = buildReadingArray();
+        $g.els.score.innerHTML = $g.user.score;
         loadReading();
     }
 }
