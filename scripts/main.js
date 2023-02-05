@@ -50,8 +50,9 @@ const loadPage = (pageId) => {
     const page = arrPage[0] + arrPage[1][0].toUpperCase() + arrPage[1].substring(1);
     $g.els[page].style.display = "flex";
 
-    /// set the global page
+    /// set user variables: page, reset score
     $g.user.page = pageId;
+    $g.user.score = 0;
 
     /// load reading array if it's the game page
     if (pageId === 'page-game') {
